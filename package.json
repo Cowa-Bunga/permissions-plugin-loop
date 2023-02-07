@@ -1,0 +1,41 @@
+{
+  "name": "permissions-plugin-loop",
+  "description": "Permissions for Loop node projects",
+  "author": {
+    "name": "Loop",
+    "email": "richard@labs.ws"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cowa-Bunga/permissions-plugin-loop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cowa-Bunga/permissions-plugin-loop/issues"
+  },
+  "homepage": "https://github.com/Cowa-Bunga/permissions-plugin-loop#readme",
+  "keywords": [
+    "permissions",
+    "permissions-plugin"
+  ],
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prettier": "prettier",
+    "prettier-write": "npm run prettier -- --parser typescript --no-semi --trailing-comma es5 --write --print-width 120",
+    "prettier-project": "npm run prettier-write -- 'src/**/*.{ts,tsx}'",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.3.1",
+    "ts-jest": "^20.0.0",
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.2",
+    "jest": "^26.0.1"
+  }
+}
