@@ -18,8 +18,15 @@ At a glance:
 
 ```js
 import loopPermit from 'permissions-plugin-loop'
-router.post('/create', auth, loopPermit("order:create"), createOrder)
+router.post('/create', auth, loopPermit("orders:create"), createOrder)
 ```
+
+Current scopes:
+
+- orders:create
+- orders:recreate
+- import:create
+
 ## Changelog
 
 See the GitHub [release history](https://github.com/Cowa-Bunga/permissions-plugin-loop/releases).
